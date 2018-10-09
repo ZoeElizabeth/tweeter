@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.new-tweet {
+  height: 175px;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  position: center;
+  border: 1px solid #a0a0a0;
+  background-color: #eee;   
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+
+.new-tweet textArea {
+  float: center;
+  width: 100%;
+}
+
+.new-tweet input{
+  float: left; 
+}
+
+.new-tweet .counter{
+  float: right;
+ }
+
+ .new-tweet h2 {
+  border-bottom: 1px solid #000000;
+ }
+
