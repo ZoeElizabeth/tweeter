@@ -7,15 +7,12 @@ html {
 
 .new-tweet {
   height: 175px;
-  margin-bottom: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin: 0 2em 2em 2em;
   position: center;
   border: 1px solid #a0a0a0;
   background-color: #eee;   
   border-radius: 10px;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 0 2em 0 2em;
 }
 
 
