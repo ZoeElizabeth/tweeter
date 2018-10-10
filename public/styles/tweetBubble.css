@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.tweets-container {
+  height: auto;
+  margin: 2em;
+  float: center;
+}
+
+.tweets-container .tweet {
+  height: auto;
+  margin-bottom: 2em; 
+  float: top;
+  border: 1px solid #a0a0a0;
+  border-radius: 10px; 
+  float: center;
+  width: 100%;
+  opacity: 0.5;
+}
+
+
+.tweets-container .tweet:hover {
+  opacity: 1;
+  float: center;
+  width: 100%;
+  display: block;
+}
+
+.tweets-container .hideIcon {
+  display: none;
+}
+
+
+.tweets-container .tweet:hover .hideIcon{
+  float: right;
+  width: 20px;
+  height: 20px;
+  padding-bottom: 0.30em;
+  display: block; 
+}
+
+.tweets-container .profilePicture {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px;
+}
+
+.tweets-container .username {
+  font-size: 150%;
+  font-weight: 700;
+  float: left;
+  padding-left: 0.3em;
+}
+
+.tweets-container .handle {
+  float: right;
+  font-weight: 300;
+  margin: 0em;
+  padding-top: 1em;
+}
+
+.tweets-container .tweetContent {
+  font-weight: 300;
+  padding: 2em;
+  height: auto;
+  word-wrap: break-word;
+}
+
+.tweets-container .bubbleHeader {
+  height: 4em;
+  background-color: #eee;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 0.5em;
+}
+
+.tweets-container .bubbleFooter {
+  height: 2.5em;
+  font-size: 75%;
+  font-weight: 300;
+  padding: .5em;
+  border-top: 1px solid #a0a0a0;
+  margin: auto;
+}
+
+.tweets-container .createdAt {
+float: left;
+}

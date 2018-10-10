@@ -13,9 +13,10 @@ textarea.on('input', function(){
   counter.text(currentCount);
 
   if (currentCount <= 0) {
-    counter.css('color', 'red');
-  } else { 
-    counter.css('color', 'black');
+    counter.addClass("counterRed")
+    
+  } else if(currentCount > 0) {
+    counter.removeClass("counterRed")
   }
 
 })
