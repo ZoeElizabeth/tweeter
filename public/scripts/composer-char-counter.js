@@ -15,7 +15,7 @@ textarea.on('input', function(){
   if (currentCount <= 0) {
     counter.addClass("counterRed")
     
-  } else if(currentCount > 0) {
+  } else if (currentCount > 0) {
     counter.removeClass("counterRed")
   }
 

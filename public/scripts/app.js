@@ -52,7 +52,6 @@ $(document).ready(function() {
     $.ajax('/tweets', { method: 'GET' })
     .then(function (tweetJSON) {
       renderTweets(tweetJSON);
-      // $submitInput.replaceWith(tweetJSON);
     });
 
   //   $.ajax('/tweets', { method: 'GET' })
