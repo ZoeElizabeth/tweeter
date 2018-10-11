@@ -36,7 +36,6 @@ $(document).ready(function() {
       $('.counter').text(140)
       $('.textarea').val('');
       $('.textarea').empty();
-      $( ".new-tweet" ).slideToggle("slow");
       $('.charError').hide();
       $('.emptyError').hide();
 

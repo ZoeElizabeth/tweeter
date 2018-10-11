@@ -15,7 +15,3 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
-
-
-Icons from 
-<a href="https://www.freepik.com/free-vector/cute-animal-icons-collection_1121413.htm">Designed by Terdpongvector</a>
