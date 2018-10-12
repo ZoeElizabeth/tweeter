@@ -30,16 +30,17 @@ html {
   display: block;
 }
 
-.tweets-container .hideIcon {
+.tweets-container .glyphicon {
   display: none;
 }
 
 
-.tweets-container .tweet:hover .hideIcon{
+.tweets-container .tweet:hover .glyphicon{
   float: right;
   width: 20px;
   height: 20px;
   padding-bottom: 0.30em;
+  color: #00a087;
   display: block; 
 }
 
