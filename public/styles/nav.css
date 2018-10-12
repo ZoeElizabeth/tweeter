@@ -1,6 +1,6 @@
 #nav-bar {
   height: 80px;
-  background: #00a087;
+  background: #9ACCD3;
   width: 100%;
   padding: 0 2em 0 2em;
   position: fixed;
@@ -28,23 +28,17 @@
     margin-top: .5em;
     height: 3em;
     width: 6em;
-    color: #00a087;
+    color: #9ACCD3;
     border: 1px solid #000000;
-    background: #E7FDFF;
+    background: #EBFAFD;
     float: right;
+    padding: 0 0 0 0;
     font-family: inherit;
-    font-weight: 300;
     font-size: 20px;
     border-radius: 10px;
 }
 
 #nav-bar button:hover {
-    color: black;
     background: #ffffff;
-    float: right;
-    font-size: 20px;
-    font-family: inherit;
-    border-radius: 10px;
-    font-weight: 300;
 }
 

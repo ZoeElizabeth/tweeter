@@ -72,16 +72,16 @@ $(document).ready(function() {
 
   function createTweetElement(tweet) {
 
-    let $tweet = $('<article>').addClass('tweet');
-    let $bubbleHeader = $('<header>').addClass('bubbleHeader');
-    let $profilePicture = $('<img>').addClass('profilePicture').attr("src", tweet.user.avatars.small);
-    let $username = $('<name>').addClass('username').text(tweet.user.name); 
-    let $handle = $('<handle>').addClass('handle').text(tweet.user.handle);
-    let $tweetContent = $('<div>').addClass('tweetContent').text(tweet.content.text);
+    let $tweet = $('<article>')
+    let $bubbleHeader = $('<header>')
+    let $profilePicture = $('<img>').attr("src", tweet.user.avatars.small);
+    let $username = $('<name>').text(tweet.user.name); 
+    let $handle = $('<handle>').text(tweet.user.handle);
+    let $tweetContent = $('<div>').text(tweet.content.text);
+    let $bubbleFooter = $('<footer>')
+    //Moment set for date and time
     let $createdAt= $('<span>').addClass('createdAt').text(moment(tweet.created_at).format('MMMM Do YYYY, h:mm:ss a'));
-    let $bubbleFooter = $('<footer>').addClass('bubbleFooter');
-
-  
+    //Boot strap glyphicons
     let $hiddenFlag = $('<span>').addClass('glyphicon glyphicon-flag')
     let $hiddenHeart = $('<span>').addClass('glyphicon glyphicon-heart')
     let $hiddenReblog = $('<span>').addClass('glyphicon glyphicon-retweet')

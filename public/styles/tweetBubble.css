@@ -9,9 +9,11 @@ html {
   height: auto;
   margin: 2em;
   float: center;
+ 
 }
 
-.tweets-container .tweet {
+.tweets-container article {
+  
   height: auto;
   margin-bottom: 2em; 
   float: top;
@@ -23,56 +25,67 @@ html {
 }
 
 
-.tweets-container .tweet:hover {
+.tweets-container article:hover {
+  background: white;
   opacity: 1;
   float: center;
   width: 100%;
   display: block;
+
 }
 
 .tweets-container .glyphicon {
   display: none;
-}
-
-
-.tweets-container .tweet:hover .glyphicon{
+  color: #9ACCD3;
   float: right;
   width: 20px;
   height: 20px;
   padding-bottom: 0.30em;
-  color: #00a087;
+}
+
+.tweets-container .tweet:hover .glyphicon{
   display: block; 
 }
 
-.tweets-container .profilePicture {
+.tweets-container .glyphicon-flag:hover{
+  color: #28B463;
+}
+
+.tweets-container .glyphicon-heart:hover{
+  color:#EC7063;
+}
+
+.tweets-container .glyphicon-retweet:hover{
+  color: #3498DB;
+}
+
+.tweets-container img {
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 3em;
+  height: 3em;
   border: 1px;
 }
 
-.tweets-container .username {
+.tweets-container name {
   font-size: 150%;
   font-weight: 700;
   float: left;
   padding-left: 0.3em;
 }
 
-.tweets-container .handle {
+.tweets-container handle {
   float: right;
-  font-weight: 300;
   margin: 0em;
   padding-top: 1em;
 }
 
-.tweets-container .tweetContent {
-  font-weight: 300;
+.tweets-container div {
   padding: 2em;
   height: auto;
   word-wrap: break-word;
 }
 
-.tweets-container .bubbleHeader {
+.tweets-container header {
   height: 4em;
   background-color: #eee;
   border-top-right-radius: 10px;
@@ -80,7 +93,7 @@ html {
   padding: 0.5em;
 }
 
-.tweets-container .bubbleFooter {
+.tweets-container footer {
   height: 2.5em;
   font-size: 75%;
   font-weight: 300;
