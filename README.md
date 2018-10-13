@@ -6,8 +6,8 @@ This repository is the starter code for the project: Students will fork and clon
 skills, and their Node, Express and MongoDB back-end skills.
 
 # Final Product
-!["Composing a Tweet"](https://gyazo.com/489b8287f773a3915f784e330ec2e429)
-!["Posting Tweet"](https://gyazo.com/60f335a3872206aa1c52321f8b2a7cdf)
+!["Composing a Tweet"](https://i.gyazo.com/489b8287f773a3915f784e330ec2e429.gif)
+!["Posting Tweet"](https://i.gyazo.com/60f335a3872206aa1c52321f8b2a7cdf.gif)
 
 ## Getting Started
 
