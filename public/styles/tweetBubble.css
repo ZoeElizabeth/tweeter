@@ -38,12 +38,11 @@ html {
   display: none;
   color: #9ACCD3;
   float: right;
-  width: 20px;
-  height: 20px;
-  padding-bottom: 0.30em;
+  width: 2em;
+  height: 2em;
 }
 
-.tweets-container .tweet:hover .glyphicon{
+.tweets-container article:hover .glyphicon{
   display: block; 
 }
 
@@ -104,4 +103,5 @@ html {
 
 .tweets-container .createdAt {
 float: left;
+padding-left: .5em;
 }

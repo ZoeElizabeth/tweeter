@@ -7,10 +7,13 @@ $(document).ready(function() {
 
   //Toggle compose tweet with button
   $( "#nav-bar button" ).click(function() {
-    $( ".new-tweet" ).slideToggle("slow");
-    $('.textarea').focus()
-  });
-
+    $( ".new-tweet" ).slideToggle("slow", function(){
+       $('.textarea').focus()
+    })
+   
+    
+  })
+  
   //make new tweet with ajax an input text
   $('.new-tweet form').on('submit', function(e) {
     e.preventDefault();
@@ -47,15 +50,10 @@ $(document).ready(function() {
 
   //Loading new tweets and rending them to page
   function loadTweets() {
-    // let $submitInput = $('.new-tweet section');
-
     $.ajax('/tweets', { method: 'GET' })
     .then(function (tweetJSON) {
       renderTweets(tweetJSON);
     });
-
-  //   $.ajax('/tweets', { method: 'GET' })
-  //   .then(renderTweets);
   }
 
   function renderTweets(tweets) {
@@ -80,7 +78,7 @@ $(document).ready(function() {
     let $tweetContent = $('<div>').text(tweet.content.text);
     let $bubbleFooter = $('<footer>')
     //Moment set for date and time
-    let $createdAt= $('<span>').addClass('createdAt').text(moment(tweet.created_at).format('MMMM Do YYYY, h:mm:ss a'));
+    let $createdAt= $('<span>').addClass('createdAt').text(moment(tweet.created_at).startOf("minute").fromNow());
     //Boot strap glyphicons
     let $hiddenFlag = $('<span>').addClass('glyphicon glyphicon-flag')
     let $hiddenHeart = $('<span>').addClass('glyphicon glyphicon-heart')
