@@ -16,9 +16,13 @@ html {
 
 body {
   margin-top: 140px;
+<<<<<<< HEAD
 
   color: #777777;
 
+=======
+  color: #777777;
+>>>>>>> f4c1bdb11bb1e8053b129e1e36241b12f3d95213
   font-family: 'Roboto Condensed', sans-serif;
   background-image: url("/images/catground.png");
   background-repeat: repeat-x repeat-y; 
